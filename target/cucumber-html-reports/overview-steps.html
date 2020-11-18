@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>18 Nov 2020, 20:51</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">HomePageFunctionality.the_Home_Page_should_direct_the_user_back_to_start_a_new_Energy_Quote()</td>
+              <td>1</td>
+              <td class="duration" data-value="459000">0.000</td>
+              <td class="duration" data-value="459000">0.000</td>
+              <td class="duration" data-value="459000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomePageFunctionality.the_user_redirected_to_sign_in_page_looking_for_register_and_wants_to_navigate_to_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1754683699">1.754</td>
+              <td class="duration" data-value="1754683699">1.754</td>
+              <td class="duration" data-value="1754683699">1.754</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomePageFunctionality.the_user_should_be_on_the_Home_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="536400">0.000</td>
+              <td class="duration" data-value="536400">0.000</td>
+              <td class="duration" data-value="536400">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomePageFunctionality.the_user_should_select_Start_Comparing_for_Energy()</td>
+              <td>1</td>
+              <td class="duration" data-value="2994339399">2.994</td>
+              <td class="duration" data-value="2994339399">2.994</td>
+              <td class="duration" data-value="2994339399">2.994</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomePageFunctionality.the_user_should_select_previous_energy_quotes_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="5741201200">5.741</td>
+              <td class="duration" data-value="5741201200">5.741</td>
+              <td class="duration" data-value="5741201200">5.741</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>5</td>
+              <td class="duration" data-value="5945414500">5.945</td>
+              <td class="duration" data-value="5945414500">8.431</td>
+              <td class="duration" data-value="29727072502">29.727</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.tearDown(Scenario)</td>
+              <td>5</td>
+              <td class="duration" data-value="683527460">0.683</td>
+              <td class="duration" data-value="683527460">0.726</td>
+              <td class="duration" data-value="3417637300">3.417</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">InvalidPostCode.as_a_user_I_am_looking_to_insert_an_invalid_postcode_PE_YS_for_an_energyQuote_I_am_expecting_an_error_message(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="8978318799">8.978</td>
+              <td class="duration" data-value="8978318799">8.978</td>
+              <td class="duration" data-value="8978318799">8.978</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">InvalidPostCode.i_am_expecting_a_similar_error_message_for_invalid_postcode()</td>
+              <td>1</td>
+              <td class="duration" data-value="88402000">0.088</td>
+              <td class="duration" data-value="88402000">0.088</td>
+              <td class="duration" data-value="88402000">0.088</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">InvalidPostCode.switching_for_business_energy_compare_I_am_looking_to_be_redirected_to_the_homePage_for_finding_the_business_postcode_PE_YS(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="5873088300">5.873</td>
+              <td class="duration" data-value="5873088300">5.873</td>
+              <td class="duration" data-value="5873088300">5.873</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.as_non_registered_user_I_should_be_able_to_open_the_energy_journey_URL_and_select_my_postcode()</td>
+              <td>3</td>
+              <td class="duration" data-value="4586943567">4.586</td>
+              <td class="duration" data-value="4586943567">4.902</td>
+              <td class="duration" data-value="13760830701">13.760</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.having_no_estimates_for_how_much_electricity_it_s_been_used()</td>
+              <td>3</td>
+              <td class="duration" data-value="3656047466">3.656</td>
+              <td class="duration" data-value="3656047466">3.664</td>
+              <td class="duration" data-value="10968142399">10.968</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.looking_to_compare_Electricity_without_a_bill_an_unknown_supplier()</td>
+              <td>3</td>
+              <td class="duration" data-value="2845354733">2.845</td>
+              <td class="duration" data-value="2845354733">3.038</td>
+              <td class="duration" data-value="8536064199">8.536</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.providing_more_details_about_energy_usage_for_the_whole_energy_usage_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="4927530500">4.927</td>
+              <td class="duration" data-value="4927530500">4.942</td>
+              <td class="duration" data-value="14782591502">14.782</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.the_Email_contact_address_details_are_given_selecting_email_to_keep_me_updated()</td>
+              <td>3</td>
+              <td class="duration" data-value="4074783400">4.074</td>
+              <td class="duration" data-value="4074783400">4.280</td>
+              <td class="duration" data-value="12224350201">12.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.the_user_is_selecting_Pay_as_you_go_meter_and_not_having_an_Economy_meter()</td>
+              <td>3</td>
+              <td class="duration" data-value="3423846466">3.423</td>
+              <td class="duration" data-value="3423846466">3.453</td>
+              <td class="duration" data-value="10271539399">10.271</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.the_user_preferences_for_tariff_should_be(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="263536433">0.263</td>
+              <td class="duration" data-value="263536433">0.267</td>
+              <td class="duration" data-value="790609301">0.790</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewTenantEnergyQuoteResult.the_user_should_assert_an_estimate_so_he_can_compare_the_prices()</td>
+              <td>3</td>
+              <td class="duration" data-value="2960225066">2.960</td>
+              <td class="duration" data-value="2960225066">6.705</td>
+              <td class="duration" data-value="8880675200">8.880</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>42</td>
+            <td class="duration">3.304</td>
+            <td class="duration">29.727</td>
+            <td class="duration">2:18.790</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

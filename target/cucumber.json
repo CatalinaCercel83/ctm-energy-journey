@@ -1,0 +1,666 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-18T20:49:32.087Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8431913701,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify that the user would be able to register from previous quotes and return to energy quotes from home page",
+        "description": "",
+        "id": "user-journey-to-previous-quotes-without-quotes-takes-you-to-home-page;verify-that-the-user-would-be-able-to-register-from-previous-quotes-and-return-to-energy-quotes-from-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 660568900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5741201200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user should select previous energy quotes page",
+            "match": {
+              "location": "HomePageFunctionality.the_user_should_select_previous_energy_quotes_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1754683699,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user redirected to sign in page looking for register and wants to navigate to home page",
+            "match": {
+              "location": "HomePageFunctionality.the_user_redirected_to_sign_in_page_looking_for_register_and_wants_to_navigate_to_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 536400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Home Page",
+            "match": {
+              "location": "HomePageFunctionality.the_user_should_be_on_the_Home_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2994339399,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user should select Start Comparing for Energy",
+            "match": {
+              "location": "HomePageFunctionality.the_user_should_select_Start_Comparing_for_Energy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 459000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The Home Page should direct the user back to start a new Energy Quote",
+            "match": {
+              "location": "HomePageFunctionality.the_Home_Page_should_direct_the_user_back_to_start_a_new_Energy_Quote()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CTM"
+          }
+        ]
+      }
+    ],
+    "name": "USER JOURNEY TO PREVIOUS QUOTES WITHOUT QUOTES TAKES YOU TO HOME PAGE",
+    "description": "",
+    "id": "user-journey-to-previous-quotes-without-quotes-takes-you-to-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HomePageFunctionality.feature",
+    "tags": [
+      {
+        "name": "@CTM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-18T20:49:51.695Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5244526000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As a user I want to assert an invalid postcode between personal use and business",
+        "description": "",
+        "id": "as-a-user-i-want-to-use-an-invalid-postcode-for-your-current-supplier-that-returns-being-a-valid-postcode-for-business;as-a-user-i-want-to-assert-an-invalid-postcode-between-personal-use-and-business",
+        "after": [
+          {
+            "result": {
+              "duration": 726016400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8978318799,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "As a user I am looking to insert an invalid postcode PE260YS for an energyQuote I am expecting an error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "260",
+                  "offset": 55
+                }
+              ],
+              "location": "InvalidPostCode.as_a_user_I_am_looking_to_insert_an_invalid_postcode_PE_YS_for_an_energyQuote_I_am_expecting_an_error_message(Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5873088300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Switching for business energy compare I am looking to be redirected to the homePage for finding the business postcode PE260YS",
+            "match": {
+              "arguments": [
+                {
+                  "val": "260",
+                  "offset": 120
+                }
+              ],
+              "location": "InvalidPostCode.switching_for_business_energy_compare_I_am_looking_to_be_redirected_to_the_homePage_for_finding_the_business_postcode_PE_YS(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88402000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am expecting a similar error message for invalid postcode",
+            "match": {
+              "location": "InvalidPostCode.i_am_expecting_a_similar_error_message_for_invalid_postcode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CTM"
+          }
+        ]
+      }
+    ],
+    "name": "AS A USER I WANT TO USE AN INVALID POSTCODE FOR YOUR CURRENT SUPPLIER THAT RETURNS BEING A VALID POSTCODE FOR BUSINESS",
+    "description": "",
+    "id": "as-a-user-i-want-to-use-an-invalid-postcode-for-your-current-supplier-that-returns-being-a-valid-postcode-for-business",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/InvalidPostCode.feature",
+    "tags": [
+      {
+        "name": "@CTM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-18T20:50:12.613Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5382565700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify as a non-registered user I should get energy quotes results",
+        "description": "",
+        "id": "new-tenant-energy-quotation-journey-with-results;verify-as-a-non-registered-user-i-should-get-energy-quotes-results;filters;2",
+        "after": [
+          {
+            "result": {
+              "duration": 677854300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4537220901,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "As non-registered user I should be able to open the energy-journey URL and select my postcode",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.as_non_registered_user_I_should_be_able_to_open_the_energy_journey_URL_and_select_my_postcode()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2888458000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Looking to compare Electricity without a bill an unknown supplier",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.looking_to_compare_Electricity_without_a_bill_an_unknown_supplier()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3397780700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user is selecting Pay as you go meter and not having an Economy meter",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_is_selecting_Pay_as_you_go_meter_and_not_having_an_Economy_meter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3664920200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Having no estimates for how much electricity it`s been used",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.having_no_estimates_for_how_much_electricity_it_s_been_used()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4922608800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Providing more details about energy usage for the whole energy usage page",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.providing_more_details_about_energy_usage_for_the_whole_energy_usage_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259055301,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user preferences for tariff should be \"fixed tariff\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fixed tariff\"",
+                  "offset": 42
+                }
+              ],
+              "location": "NewTenantEnergyQuoteResult.the_user_preferences_for_tariff_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4280053500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The Email contact address details are given selecting email to keep me updated",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_Email_contact_address_details_are_given_selecting_email_to_keep_me_updated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6705894500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user should assert an estimate so he can compare the prices",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_should_assert_an_estimate_so_he_can_compare_the_prices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CTM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T20:50:49.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5341113101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify as a non-registered user I should get energy quotes results",
+        "description": "",
+        "id": "new-tenant-energy-quotation-journey-with-results;verify-as-a-non-registered-user-i-should-get-energy-quotes-results;filters;3",
+        "after": [
+          {
+            "result": {
+              "duration": 676360400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4321021000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "As non-registered user I should be able to open the energy-journey URL and select my postcode",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.as_non_registered_user_I_should_be_able_to_open_the_energy_journey_URL_and_select_my_postcode()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3038315000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Looking to compare Electricity without a bill an unknown supplier",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.looking_to_compare_Electricity_without_a_bill_an_unknown_supplier()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3453929699,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user is selecting Pay as you go meter and not having an Economy meter",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_is_selecting_Pay_as_you_go_meter_and_not_having_an_Economy_meter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3655464899,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Having no estimates for how much electricity it`s been used",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.having_no_estimates_for_how_much_electricity_it_s_been_used()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4942791601,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Providing more details about energy usage for the whole energy usage page",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.providing_more_details_about_energy_usage_for_the_whole_energy_usage_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267184500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user preferences for tariff should be \"variable tariff\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"variable tariff\"",
+                  "offset": 42
+                }
+              ],
+              "location": "NewTenantEnergyQuoteResult.the_user_preferences_for_tariff_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4234891301,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The Email contact address details are given selecting email to keep me updated",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_Email_contact_address_details_are_given_selecting_email_to_keep_me_updated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090560000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user should assert an estimate so he can compare the prices",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_should_assert_an_estimate_so_he_can_compare_the_prices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CTM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T20:51:20.376Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5326954000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify as a non-registered user I should get energy quotes results",
+        "description": "",
+        "id": "new-tenant-energy-quotation-journey-with-results;verify-as-a-non-registered-user-i-should-get-energy-quotes-results;filters;4",
+        "after": [
+          {
+            "result": {
+              "duration": 676837300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4902588800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "As non-registered user I should be able to open the energy-journey URL and select my postcode",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.as_non_registered_user_I_should_be_able_to_open_the_energy_journey_URL_and_select_my_postcode()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2609291199,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Looking to compare Electricity without a bill an unknown supplier",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.looking_to_compare_Electricity_without_a_bill_an_unknown_supplier()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3419829000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user is selecting Pay as you go meter and not having an Economy meter",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_is_selecting_Pay_as_you_go_meter_and_not_having_an_Economy_meter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3647757300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Having no estimates for how much electricity it`s been used",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.having_no_estimates_for_how_much_electricity_it_s_been_used()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4917191101,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Providing more details about energy usage for the whole energy usage page",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.providing_more_details_about_energy_usage_for_the_whole_energy_usage_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 264369500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user preferences for tariff should be \"all tariffs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all tariffs\"",
+                  "offset": 42
+                }
+              ],
+              "location": "NewTenantEnergyQuoteResult.the_user_preferences_for_tariff_should_be(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3709405400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The Email contact address details are given selecting email to keep me updated",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_Email_contact_address_details_are_given_selecting_email_to_keep_me_updated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1084220700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user should assert an estimate so he can compare the prices",
+            "match": {
+              "location": "NewTenantEnergyQuoteResult.the_user_should_assert_an_estimate_so_he_can_compare_the_prices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CTM"
+          }
+        ]
+      }
+    ],
+    "name": "NEW TENANT ENERGY QUOTATION JOURNEY WITH RESULTS",
+    "description": "",
+    "id": "new-tenant-energy-quotation-journey-with-results",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/NewTenantEnergyQuoteResult.feature",
+    "tags": [
+      {
+        "name": "@CTM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
