@@ -1,7 +1,7 @@
 #Cucumber and/or Selenium tests.
 
 ###Instructions
-Clone the repo: 
+Clone the repo: https://github.com/CatalinaCercel83/ctm-energy-journey.git
 
 ###Git command:
 
